@@ -1,3 +1,45 @@
-// Place all the styles related to the Users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.profile-wrapper {
+  background-color:#eee;
+}
+
+#userinfo{
+  float:left;
+  min-width:500px;
+}
+
+#documentlist {
+  float:right;
+  border:1px solid slategrey;
+  border-radius:8px;
+  padding:10px;
+  margin:10px;
+}
+
+#gravatar {
+  display: block;
+  margin:10px 10px 10px 10px;
+
+}
+
+span.tags
+{
+  background: #1abc9c;
+  border-radius: 2px;
+  color: #f5f5f5;
+  font-weight: bold;
+  padding: 2px 4px;
+}
+
+#upload {
+  text-align: center;
+}
+
+.upload-wrapper {
+  margin:0px;
+  background-color:black;
+  color:white;
+  padding-top:20px;
+  padding-bottom:20px;
+  width:100%;
+}

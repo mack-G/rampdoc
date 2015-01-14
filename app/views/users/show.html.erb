@@ -1,11 +1,41 @@
 <% provide(:title, @user.name) %>
-<div class="row">
-  <aside class="col-md-4">
-    <section class="user_info">
-      <h1>
-        <%= gravatar_for @user %>
-        <%= @user.name %>
-      </h1>
-    </section>
-  </aside>
+
+<div class="container">
+
+    <div class="row profile-wrapper">
+        <div class="col-sm-12">
+            <%= gravatar_for @user %>
+            <h1><%= @user.name %></h1>
+            <div>
+                <p><strong>About: </strong> Web Designer / UI. </p>
+                <p><strong>Skills: </strong>
+                    <span class="tags">html5</span>
+                    <span class="tags">css3</span>
+                    <span class="tags">jquery</span>
+                    <span class="tags">bootstrap3</span>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <h3>Created Documents</h3>
+            <% @documents.each do |d| %>
+            <ul><%= link_to d.title, document_path(d)%></ul>
+            <% end %>
+        </div>
+    </div>
+
+    <div class="row upload-wrapper">
+        <div class="col-sm-12">
+            <div>
+                <h1>Create document to ramp!</h1>
+                <div id="upload">
+                    <%= link_to "Create", new_document_path, class: "btn btn-large btn-primary" %>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
