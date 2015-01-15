@@ -1,26 +1,18 @@
 
 .profile-wrapper {
   background-color:#eee;
+  padding-left:10px;
+  margin:0px;
 }
 
-#userinfo{
-  float:left;
-  min-width:500px;
+
+.document-list {
+  background-color:#e0e0e0;
+  padding:0px;
+  margin:0px;
+  height: 500px;
 }
 
-#documentlist {
-  float:right;
-  border:1px solid slategrey;
-  border-radius:8px;
-  padding:10px;
-  margin:10px;
-}
-
-#gravatar {
-  display: block;
-  margin:10px 10px 10px 10px;
-
-}
 
 span.tags
 {
@@ -42,4 +34,9 @@ span.tags
   padding-top:20px;
   padding-bottom:20px;
   width:100%;
+}
+
+.col-sm-12 {
+    padding:20px 10px 20px 10px;
+    margin: 0px;
 }

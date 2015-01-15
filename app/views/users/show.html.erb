@@ -1,25 +1,24 @@
 <% provide(:title, @user.name) %>
 
-<div class="container">
+<div class="container-fluid profile-wrapper">
 
-    <div class="row profile-wrapper">
+    <div class="row">
         <div class="col-sm-12">
             <%= gravatar_for @user %>
             <h1><%= @user.name %></h1>
             <div>
                 <p><strong>About: </strong> Web Designer / UI. </p>
-                <p><strong>Skills: </strong>
-                    <span class="tags">html5</span>
-                    <span class="tags">css3</span>
-                    <span class="tags">jquery</span>
-                    <span class="tags">bootstrap3</span>
+                <p><strong>Skills:
+                    <% @user.tag_list.each do |t| %>
+                    <span class="label label-primary"><%= t %></span>
+                    <% end %>
+                    </strong>
                 </p>
-
             </div>
         </div>
     </div>
 
-    <div class="row">
+    <div class="row document-list">
         <div class="col-sm-12">
             <h3>Created Documents</h3>
             <% @documents.each do |d| %>

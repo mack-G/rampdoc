@@ -7,12 +7,10 @@
 </h3>
 
 <div>
-    <h4>Tags:</h4>
-    <span class="tags">
-        <%= @document.tag_list.each do |t| %>
-        <% end %>
-    </span>
-
+    Document Tags:
+    <% @document.tag_list.each do |t| %>
+        <span class="label label-primary"><%= t %></span>
+    <% end %>
 </div>
 
 <div id="disqus_thread"></div>

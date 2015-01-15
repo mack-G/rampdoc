@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   has_many :documents
-  acts_as_taggable
+  acts_as_taggable # Alias for acts_as_taggable_on :tags
+  acts_as_taggable_on :skills
 
   attr_accessor :remember_token
   before_save { self.email = email.downcase }
