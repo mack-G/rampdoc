@@ -5,8 +5,13 @@
     <%= form_for @document do |f| %>
         <%= f.label :title %>
         <%= f.text_field :title, class: 'form-control' %>
+
         <%= f.label :description %>
         <%= f.text_field :description, class: 'form-control' %>
+
+        <%= f.label :tag_list %>
+        <%= f.text_field :tag_list, class: 'form-control' %>
+
         <%= f.submit "Create document", class: "btn btn-primary" %>
     <% end %>
   </div>

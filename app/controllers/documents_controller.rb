@@ -14,6 +14,7 @@ class DocumentsController < ApplicationController
   def create
     @document = Document.new (document_params)
     @document.user = current_user
+
     if @document.save
       flash[:success] = "Document Creation Successful!"
       redirect_to @document
@@ -45,7 +46,7 @@ class DocumentsController < ApplicationController
   private
 
       def document_params
-        params.require(:document).permit(:title,:description)
+        params.require(:document).permit(:title,:description,:tag_list)
       end
 
 
