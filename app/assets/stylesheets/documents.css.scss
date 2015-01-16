@@ -1,3 +1,28 @@
-// Place all the styles related to the documents controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.document-wrapper {
+    float:left;
+    width:700px;
+}
+
+.feedback-wrapper {
+    float:right;
+    width:500px;
+    margin-top:100px;
+}
+
+.viewer {
+    width:800px;
+    height:900px;
+}
+
+.tags {
+    padding:5px;
+}
+
+.doc-title{
+    text-size:20px;
+}
+
+.doc-description{
+    font-size:16px;
+    padding:5px;
+}
