@@ -1,3 +1,61 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.slogan{
+    font-size:22px;
+
+}
+
+.quote {
+    text-align:center;
+    font-size:18px;
+    font-style: italic;
+}
+
+
+.marketing {
+    text-align:center;
+    font-size:16px;
+    margin:50px;
+    padding:10px;
+
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+.container.marketing {
+    padding:0;
+}
+
+
+/* Center align the text within the three columns below the carousel */
+.row {
+    display: flex;
+    text-align: center;
+    padding: 0 20px 10px 20px;
+}
+
+.marketing .span4 {
+    top: 0px ;
+    // border: 1px solid #ccc;
+    // -moz-border-radius: 10px;
+    // -webkit-border-radius: 10px;
+    // border-radius: 5px;
+    // -moz-box-shadow: 2px 2px 3px #666;
+    // -webkit-box-shadow: 2px 2px 3px #666;
+    // box-shadow: 2px 2px 3px #666;
+    font-size: 18px;
+    padding: 4px 8px;
+    outline: 0;
+    -webkit-appearance: none;
+    text-align: justify;
+}
+.marketing h2 {
+    font-weight: normal;
+}
+.marketing .span4 p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
