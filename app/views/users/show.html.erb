@@ -18,11 +18,21 @@
         </div>
     </div>
 
+ <%= link_to 'Message', {controller: 'conversations', action: 'new', user_id: @user.id} %>
+
+ <%= link_to 'Inbox', {controller: 'conversations', action: 'index', user_id: @user.id} %>
+
+
+
     <div class="row document-list">
         <div class="col-sm-12">
             <h3>Created Documents</h3>
             <% @documents.each do |d| %>
-            <ul><%= link_to d.title, document_path(d)%></ul>
+                <ul><%= link_to d.title, document_path(d)%></ul>
+                <% if current_user == d.user %>
+                    <%= link_to "delete", d, method: :delete,
+                            data: { confirm: "You sure?" } %>
+                <% end %>
             <% end %>
         </div>
     </div>

@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
   has_many :documents
   acts_as_taggable # Alias for acts_as_taggable_on :tags
   acts_as_taggable_on :skills
+  acts_as_messageable
 
   attr_accessor :remember_token
   before_save { self.email = email.downcase }
@@ -24,6 +25,11 @@ class User < ActiveRecord::Base
   def User.new_token
     SecureRandom.urlsafe_base64
   end
+
+  def mailboxer_email(object)
+      nil
+  end
+
 
   # Remembers a user in the database for use in persistent sessions.
   def remember
