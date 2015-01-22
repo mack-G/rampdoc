@@ -1,3 +1,30 @@
-<% current_user.mailbox.inbox.each do |m|%>
-<%= m.subject %>
-<% end %>
+<div class="tab-content">
+    <div class="tab-pane active" id="inbox">
+
+        <div class="container">
+            <div class="content-container clearfix">
+                <div class="col-md-12">
+                    <h1 class="content-title">Inbox</h1>
+
+
+
+                    <ul class="mail-list">
+                        <li><% current_user.mailbox.inbox.each do |m| %>
+                            <a href="">
+                                <span class="mail-sender">You Tube</span>
+                                <span class="mail-subject">
+
+                                    <%= m.subject %>
+                                    <% end %>
+                                </span>
+                                <span class="mail-message-preview">You have ten more subscriptions click her...</span>
+                            </a>
+                        </li>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

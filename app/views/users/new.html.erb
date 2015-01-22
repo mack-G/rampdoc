@@ -1,27 +1,33 @@
 <% provide(:title, 'Sign up') %>
-<h1>Sign up</h1>
 
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <%= form_for(@user) do |f| %>
-    <%= render 'shared/error_messages' %>
+<img class="signup-image" width="100%" src="http://www.whitby-seafoods.com/images/background3.jpg">
 
-    <%= f.label :name %>
-    <%= f.text_field :name, class: 'form-control' %>
 
-    <%= f.label :email %>
-    <%= f.email_field :email, class: 'form-control' %>
+<div class="signup-wrapper">
+    <h1>Sign up</h1>
 
-    <%= f.label :password %>
-    <%= f.password_field :password, class: 'form-control' %>
+    <div class="row signup">
+      <div class="col-md-6 col-md-offset-3">
+        <%= form_for(@user) do |f| %>
+        <%= render 'shared/error_messages' %>
 
-    <%= f.label :password_confirmation, "Confirmation" %>
-    <%= f.password_field :password_confirmation, class: 'form-control' %>
+        <%= f.label :name %>
+        <%= f.text_field :name, class: 'form-control', :placeholder =>"Bob Smith" %>
 
-    <%= f.label :tag_list %>
-    <%= f.text_field :tag_list, class: 'form-control' %>
+        <%= f.label :email %>
+        <%= f.email_field :email, class: 'form-control', :placeholder =>"user@example.com" %>
 
-    <%= f.submit "Create my account", class: "btn btn-primary" %>
-    <% end %>
-  </div>
+        <%= f.label :password %>
+        <%= f.password_field :password, class: 'form-control', :placeholder =>"**********" %>
+
+        <%= f.label :password_confirmation, "Confirmation" %>
+        <%= f.password_field :password_confirmation, class: 'form-control',:placeholder =>"**********" %>
+
+        <%= f.label :skill_tags %>
+        <%= f.text_field :tag_list, class: 'form-control', :placeholder => "FP&A, Accounting, HTML/CSS, ROR, etc."%>
+
+        <%= f.submit "Create my account", class: "btn btn-primary" %>
+        <% end %>
+      </div>
+    </div>
 </div>

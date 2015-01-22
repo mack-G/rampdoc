@@ -1,16 +1,76 @@
+/********************************/
+/*        Profile               */
+/********************************/
+
 
 .profile-wrapper {
-  background-color:#eee;
   padding-left:10px;
   margin:0px;
+  height: 300px;
 }
 
+.col-md-3.image-profile {
+    padding-left:100px;
+    padding-top: 70px;
+}
+
+.col-md-5.profile-content{
+    text-align:left;
+    h1{
+        text-align:left;
+    }
+}
+
+.col-md-4.profile-tags{
+    text-align:left;
+    padding-top:40px;
+}
+
+.glyphicon.glyphicon-envelope {
+    font-size: 1.5em;
+    color: black;
+    padding-left: 5px;
+    text-decoration: none;
+}
+
+.glyphicon.glyphicon-plus-sign {
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.glyphicon.glyphicon-cloud{
+    font-size: 2.5em;
+}
+
+.glyphicon.glyphicon-flash{
+    font-size: 2.5em;
+}
+
+.glyphicon.glyphicon-cloud-upload{
+    font-size: 2.5em;
+}
+.row.profile-lower{
+    height: 500px;
+}
+
+.small-font{
+    font-size:0.8em;
+    color:crimson;
+    text-align:left;
+    padding-left:225px;
+
+}
 
 .document-list {
   background-color:#e0e0e0;
   padding:0px;
   margin:0px;
-  height: 500px;
+}
+
+.document-list{
+    text-align:center;
+    background-color:#F7F7F7;
+    padding-right:25px;
 }
 
 
@@ -23,20 +83,82 @@ span.tags
   padding: 2px 4px;
 }
 
-#upload {
-  text-align: center;
+
+/********************************/
+/*         Inbox                */
+/********************************/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+
+body {
+    background-color:#F7F7F7;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.upload-wrapper {
-  margin:0px;
-  background-color:black;
-  color:white;
-  padding-top:20px;
-  padding-bottom:20px;
-  width:100%;
+/*Forms setup*/
+.form-control {
+    border-radius:0;
+    box-shadow:none;
+    height:auto;
+}
+.float-label{
+    font-size:10px;
+}
+input[type="text"].form-control,
+input[type="search"].form-control{
+    border:none;
+    border-bottom:1px dotted #CFCFCF;
+}
+textarea {
+    border:1px dotted #CFCFCF!important;
+    height:130px!important;
+}
+/*Content Container*/
+.content-container {
+    background-color:#fff;
+    padding:35px 20px;
+    margin-bottom:20px;
+}
+h1.content-title{
+    font-size:32px;
+    font-weight:300;
+    text-align:center;
+    margin-top:0;
+    margin-bottom:20px;
+    font-family: 'Open Sans', sans-serif!important;
 }
 
-.col-sm-12 {
-    padding:20px 10px 20px 10px;
-    margin: 0px;
+/*mail list*/
+
+ul.mail-list{
+    padding:0;
+    margin:0;
+    list-style:none;
+    margin-top:30px;
+}
+ul.mail-list li a{
+    display:block;
+    border-bottom:1px dotted #CFCFCF;
+    padding:20px;
+    text-decoration:none;
+}
+ul.mail-list li:last-child a{
+    border-bottom:none;
+}
+ul.mail-list li a:hover{
+    background-color:#DBF9FF;
+}
+ul.mail-list li span{
+    display:block;
+}
+ul.mail-list li span.mail-sender{
+    font-weight:600;
+    color:#8F8F8F;
+}
+ul.mail-list li span.mail-subject{
+    color:#8C8C8C;
+}
+ul.mail-list li span.mail-message-preview{
+    display:block;
+    color:#A8A8A8;
 }

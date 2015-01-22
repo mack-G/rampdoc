@@ -202,7 +202,7 @@
 
 .marketing h2 {
     font-weight: normal;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .featurette-wrapper {
@@ -215,12 +215,16 @@
     top: 0;
     padding-top: 300px;
     width: 100%;
-    color: #fff;
+    color: lavender;
     margin: 5px;
     text-transform: uppercase;
     text-shadow: 1px 1px 0 rgba(0,0,0,.75);
     font-size: 5em;
     font-weight: bold;
+}
+
+.featurette-image{
+    opacity:0.5;
 }
 
 .howitworks-heading{
@@ -235,8 +239,9 @@
     margin-left:50px;
 }
 
-.row{
+.row.howitworks{
     padding-bottom:50px;
+    padding-left:150px;
 
 }
 
@@ -251,9 +256,9 @@
 .step2 {
     float:right;
     text-align: justify;
-    margin-left:160px;
+    margin-left:130px;
     margin-right:200px;
-    padding-top:40px;
+    padding-top:50px;
 }
 
 .step3 {
@@ -261,7 +266,7 @@
     text-align: justify;
     margin-left:85px;
     margin-right:200px;
-    padding-top:50px;
+    padding-top:60px;
 }
 
 .howitworks-ending{

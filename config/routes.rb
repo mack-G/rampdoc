@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get    'login'      => 'sessions#new'
   post   'login'      => 'sessions#create'
   delete 'logout'     => 'sessions#destroy'
+  get    'inbox'      => 'conversations#index'
   resources :users
   resources :documents
   resources :conversations

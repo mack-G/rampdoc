@@ -1,3 +1,38 @@
 // Place all the styles related to the Sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Log In Page */
+
+.login-wrapper{
+    position: absolute;
+    top: 200px;
+    width:1000px;
+    margin-left:220px;
+    text-align: left;
+
+}
+
+.login-image{
+    position:relative;
+}
+
+
+/* Sign Up Page */
+
+.signup-wrapper{
+    position: absolute;
+    top: 150px;
+    width:1000px;
+    margin-left:220px;
+    text-align: left;
+
+}
+
+.row.signup{
+    text-align: left;
+}
+
+.signup-image{
+    position:relative;
+}
